@@ -1,0 +1,605 @@
+/* reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+html, body {
+    /* margin: 0;
+    padding: 0; */
+    width: 100%;
+
+}
+
+.main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.header {
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* cho responsive */
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999; 
+    width: 100%;
+
+
+    /* ẩn những các bị tràn */
+
+}
+
+.header > * {
+
+}
+
+.header__nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}
+
+.header__nav li {
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 40px;
+    
+}
+
+.header__icon {
+    padding: 20px 40px;
+}
+
+
+
+.header__nav-list, .header__icon {
+
+    /* margin: 0 15px; */
+
+
+    height: 100%; 
+    display: flex;         
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header__nav-list > i {
+    margin-left: 5px; /* hoặc 8px cho rộng hơn */
+}
+
+.header__nav-list a {
+
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+
+.header__nav-list:hover, 
+.header__icon:hover,
+.sub-list__item:hover {
+    background-color: gray;
+    color: black;
+}   
+
+.header__icon {
+    font-size: 15px;
+}
+
+
+
+/* sub list */
+.header__nav-list--sub {
+    position: relative;
+}
+
+.sub-list {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    color: #000;
+    background-color: white;
+    width: 170px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+}   
+
+
+
+.sub-list__item {
+    padding: 10px;
+    text-transform: none;
+}
+
+
+/* NHỚ cái này */
+.header__nav-list--sub:hover > .sub-list {
+    display: block;
+}
+
+/* Slider */
+.slider {
+    padding-top: 50%;
+    background: 
+    url('/The_band/assets/img/chicago.jpg') top center / cover no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.slider--text {
+    position: absolute;
+    bottom: 5px;
+    padding: 32px 16px;
+}
+
+.slider--title {
+    text-align: center;
+    margin: 15px;
+    font-size: 18px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.slider--descrip {
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+/* Content */
+
+/* Info */
+.info {
+    padding: 64px 16px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+
+.info__title, .info__slogan {
+    text-align: center;
+}
+
+.info__title {
+    margin: 10px 0;
+
+}
+
+h1 {
+    font-size: 30px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+p {
+    font-size: 15px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.info__slogan, .info__paragraph {
+    margin: 15px 0;
+
+}
+
+.info__paragraph {
+    text-align: justify;
+}
+
+
+.info > .info__slogan {
+    color: gray;
+}
+
+
+/* info-picture */
+.info__mem-pic {
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info__mem-pic .mem-name {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.info__mem-pic img {
+    width: 154px;
+    border-radius: 5px;
+}
+
+
+
+/* Ticket */
+
+
+.ticket-wrap {
+    background-color: #000;
+}
+
+.ticket {
+
+    padding: 64px 16px;
+    margin: 10px auto;
+    width: 800px;
+    max-width: 100%;
+}
+
+
+.ticket__title, .ticket__message {
+    text-align: center;
+}
+
+.ticket__title {
+    color: white;
+    margin: 10px auto;
+
+}
+
+.ticket__message {
+    color: gray;
+    margin: 15px auto;
+
+}
+
+.time {
+    background-color: white;
+    margin: 40px auto;
+}
+
+
+.time__items {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.time__items--layout {
+    justify-content: space-between;
+}
+
+.time__items > .sold-out {
+    margin-left: 16px;
+    background-color: red;
+    color: white;
+    padding: 0px 5px;
+    line-height: 1.5;
+}
+
+.remain-ticket {
+    background-color: #000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+/*  */
+
+.ticket__info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.ticket__detail {
+    padding: 0 8px;
+
+}
+
+.ticket__detail-wrap {
+    background-color: white;
+    padding: 1px 16px;
+
+}
+
+.ticket__detail > img {
+    width: 245px;
+
+    /* nếu để mặc định thì sẽ là inline
+    -> có 1 khoảng cách nhỏ ở giữa
+    -> để block */
+    display: block;
+}
+
+.ticket__detail-city,
+.ticket__detail-date,
+.ticket__detail-descrip {
+    margin: 15px 0;
+}
+
+.ticket__detail-city {
+    /* margin: 15px 0; */
+}
+
+.ticket__detail-date {
+    color: gray;
+}
+
+.ticket__detail-descrip {
+    letter-spacing: 0;
+}
+
+.ticket__detail-btn {
+    background-color: #000;
+    color: white;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.ticket__detail-btn:hover {
+    background-color: gray;
+    color: black;
+}
+
+
+/* modal */
+.ticket-modal {
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+
+.ticket-modal__wrap {
+    width: 900px;
+    margin: auto;
+    animation: slideFromY 2s ease forwards;
+}
+
+@keyframes slideFromY {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
+
+
+/* modal heading */
+.ticket-modal__heading {
+    background-color: #009688;
+    padding: 32px 16px;
+    color: white;
+    position: relative;
+}
+
+
+.modal-heading__title {
+
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 0px;
+    text-align: center;
+
+}
+
+.modal-heading__close {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 18px;
+    line-height: 24px;
+}
+
+.modal-heading__close:hover {
+    background-color: rgb(169, 166, 166);
+    color: rgb(34, 34, 34);
+}
+
+
+.ticket-modal__detail {
+    position: relative;
+    padding: 0.125px 16px;
+    background-color: white;
+
+}
+
+.ticket-message {
+    margin: 15px auto;
+}
+
+.ticket-modal__detail > input {
+    padding: 10px;
+    width: 100%;
+}
+
+.btn {
+
+    margin: 16px auto;
+
+    font-family: sans-serif;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 300;
+    font: 15px;
+}
+
+.btn--confirm {
+    background-color: #009688 ;
+    width: 100%;
+    padding: 16px;
+}
+
+.btn--close {
+    background-color: rgb(239, 75, 75);
+    padding: 8px 16px;
+}
+
+.btn--close:hover {
+    background-color: gray;
+    color: rgb(49, 48, 48);
+}
+
+
+.help {
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+    margin: 15px auto;
+}
+
+.show {
+    display: flex;
+}
+
+/* CONTACT */
+
+.contact {
+    padding: 64px 16px;
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.contact__header > div {
+    color: rgb(163, 160, 160);
+    margin: 15px auto;
+    text-align: center;
+}
+
+.contact__header > h1 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.contact__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__info {
+
+}
+
+.info__detail {
+    margin-bottom: 16px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+
+}
+
+.input__items {
+    display: flex;
+    gap: 10px;
+
+}
+
+.input__contact {
+    padding: 8px;
+}
+
+.input__send {
+    padding: 8px 16px;
+    margin: 16px 0;
+    background-color: #040404;
+    color: white;
+    border: none;
+    align-self: flex-end;
+    
+}
+
+/* Map */
+.map-img {
+       /* bỏ khoảng trắng inline */
+    width: 100%;      /* chiếm hết chiều ngang của cha */
+    height: auto;     /* giữ tỉ lệ */
+}
+
+/* Footer */
+.footer {
+    padding: 64px 16px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.footer__text {
+    margin: 15px auto;
+    font-size: 15px;
+    color: gray;
+}
+
+.footer__text > a {
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

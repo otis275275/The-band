@@ -1,0 +1,127 @@
+/* PC */
+@media (min-width: 1024px) {
+    .icon__options-bar {
+        display: none;
+    }
+    .merch {
+        display: none;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 740px) and (max-width:1023px) {
+    .header__nav-list, .header__icon {
+        padding: 0 10px;  /* nhỏ lại khi tablet */
+    }
+    .merch {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 20px;
+    }
+
+    /* Header */
+
+    .header {
+        font-size: 20px;
+
+        height: 86px;
+        overflow: hidden;
+    }
+    .header__icon {
+        display: none;
+    }
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+        width: 100%;
+    }
+    .header__nav-list {
+        width: 100%;       /* li chiếm toàn bộ ngang */
+    }
+    .header__nav-list a {
+        display: block;      /* block để phủ hết chiều ngang */
+        width: 100%;
+        padding: 12px 10px;  /* đẩy chữ cách mép trái 16px */
+        color: white;
+        text-decoration: none;
+        text-align: left;
+    }
+    .header__nav-list--sub {
+        display: none;
+
+    }
+    .header__nav li {
+        padding: 10px;
+    }
+
+    /* Slider */
+    .slider {
+        margin-top: 86px;
+    }
+
+    /* Mem picture */
+    .info__mem-pic {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info__mem-pic img {
+        margin-bottom: 16px;
+        width: 205px;
+    }
+
+    .ticket__info {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .ticket__detail > img {
+        width: 100%;
+    }
+
+
+    /* Contact info and form */
+    .contact__block {
+        flex-direction: column;
+        padding: 32px 0;
+    }
+
+    .contact__info {
+        margin-bottom: 16px;
+    }
+    .input__items {
+        flex-direction: column;
+    }
+
+
+}
+
+.header--responsive {
+    overflow: visible;
+    height: auto;
+}
+
+.icon__options-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px 20px;
+  
+}
+
+.icon__options-bar:hover {
+    background-color: gray;
+}
+
