@@ -135,7 +135,7 @@ html, body {
 .slider {
     padding-top: 50%;
     background: 
-    url('/The_band/assets/img/chicago.jpg') top center / cover no-repeat;
+    url('../img/chicago.jpg') top center / cover no-repeat;
     color: white;
     display: flex;
     justify-content: center;
